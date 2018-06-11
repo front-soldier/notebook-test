@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "caption" : "Caption1",
+    "text": "text1",
+    "keywords": ["big", "small", "yellow"],
+    "date": "2018-04-10"
+  },
+  {
+    "id": "2",
+    "caption" : "Caption2",
+    "text": "text2",
+    "keywords": ["great", "awesome", "blue"],
+    "date": "2018-06-05"
+  },
+  {
+    "id": "3",
+    "caption" : "Caption3",
+    "text": "text3",
+    "keywords": ["great", "awesome", "grey"],
+    "date": "2018-04-10"
+  },
+  {
+    "id": "4",
+    "caption" : "Caption4",
+    "text": "text4",
+    "keywords": ["immense", "cool", "pink"],
+    "date": "2018-06-05"
+  }
+]

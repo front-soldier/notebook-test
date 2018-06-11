@@ -1,0 +1,8 @@
+<div *ngIf="notes.length === 0; else list">Sorry! There is no results by this query</div>
+<ng-template #list>
+  <ul class="notes-list">
+    <li *ngFor="let note of notes; index as i" class="list-element" [ngClass]="{'list-element': true, 'active-note': i===activeNote}">
+      <app-note [note]="note"></app-note>
+    </li>
+  </ul>
+</ng-template>

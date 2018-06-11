@@ -1,0 +1,14 @@
+<form #form="ngForm">
+    <input type="text" class="caption" name="caption" [value]="note.caption" [(ngModel)]="note.caption" placeholder="Caption" required #caption="ngModel">
+    <div class="alert" *ngIf="caption.invalid && (caption.dirty || caption.touched)">Caption is required</div>
+    <textarea class="text" name="text" [value]="note.text" [(ngModel)]="note.text" placeholder="Text"></textarea>
+  <div>
+    <input type="text" class="keywords" name="keywords" [value]="note.keywords" [(ngModel)]="note.keywords" placeholder="Keywords" required #keywords="ngModel">
+    <input type="date" class="date" name="date" [value] = "note.date" [(ngModel)]="note.date">
+    <div class="alert" *ngIf="keywords.invalid && (keywords.dirty || keywords.touched)">Keywords are required</div>
+  </div>
+  <div class="button-container">
+    <button class="button handle-button" (click)="saveNote($event)">SAVE</button>
+    <button class="button handle-button" (click)="deleteNote($event)">DELETE</button>
+  </div>
+</form>

@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.app-note {
+  flex: 0 1 30%;
+}
+.app-search {
+  flex: 0 1 60%;
+}
+.app-list {
+  flex: 0 1 30%;
+  margin-top: 10px;
+}
+.app-layout {
+  flex: 0 1 60%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .app-list {
+    flex: 0 1 45%;
+    order: 0;
+    margin-top: 0;
+  }
+  .app-search {
+    flex: 0 1 45%;
+    order: 1;
+  }
+  .app-note {
+    flex: 0 1 45%;
+    order: 2;
+    margin: 5px;
+  }
+  .app-layout {
+    flex: 0 1 100%;
+    order: 3;
+    margin-top: 0;
+  }
+}

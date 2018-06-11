@@ -1,0 +1,37 @@
+.caption {
+  display: block;
+  width: 100%;
+}
+.text {
+  display: block;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  margin: 5px 0 0 0;
+}
+.keywords {
+  margin: 5px 0 0 0;
+  line-height: 20px;
+}
+.date {
+  margin: 5px 0 0 0;
+  line-height: 20px;
+}
+.save-button {
+  margin: 5px 0 0 0;
+}
+.delete-button {
+  margin: 5px 0 0 0;
+}
+.alert {
+  color: red;
+}
+.handle-button {
+  margin: 5px 0 0 0;
+  width: 20%;
+}
+@media screen and (max-width: 550px) {
+  .button-container {
+    text-align: center;
+  }
+}

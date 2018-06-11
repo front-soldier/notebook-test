@@ -1,0 +1,25 @@
+.notes-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.list-element {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  cursor: pointer;
+}
+.list-element:last-of-type {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+.active-note {
+  background-color: lightblue;
+}
+@media screen and (max-width: 550px) {
+  .notes-list {
+    margin: 0 auto;
+    max-height: 150px;
+    overflow: auto;
+  }
+}
