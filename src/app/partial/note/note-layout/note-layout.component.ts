@@ -25,7 +25,8 @@ export class NoteLayoutComponent implements OnInit {
   }
   saveNote(event) {
     event.preventDefault();
-    if (this.form.invalid) {
+    console.log(this.form.controls.caption.value);
+    if (this.form.invalid || this.form.controls.caption.value.trim() === '' || this.form.controls.keywords.value.trim() === '') {
       this.verifyPage();
       return;
     }
@@ -36,6 +37,9 @@ export class NoteLayoutComponent implements OnInit {
       note.keywords = keywords;
     }
     this.notesService.saveNote(note, this.isNew);
+    if (this.isNew) {
+      this.isNew = false;
+    }
   }
   deleteNote(event) {
     event.preventDefault();
