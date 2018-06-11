@@ -53,7 +53,7 @@ export class NotesService {
     });
     this.updateNotes.emit(newNotes);
     this.updateCurrentNotes.emit(newNotes);
-    this.updateNote.emit(newNotes[0]);
+    this.updateNote.emit({note: newNotes[0], isNew: false});
   }
 
   searchNotes(searchQuery) {
