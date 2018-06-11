@@ -15,7 +15,7 @@ export class NoteListComponent implements OnInit {
       this.notes = res;
     });
     this.notesService.updateNote.subscribe(res => {
-      this.activeNote = this.notes.indexOf(res);
+      this.activeNote = this.notes.indexOf(res.note);
     });
   }
 }
